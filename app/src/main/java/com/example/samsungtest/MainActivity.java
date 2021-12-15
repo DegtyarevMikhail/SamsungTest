@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnDivision = (Button) findViewById(R.id.ButtonDivide);
         Button btnMultiply = (Button) findViewById(R.id.ButtonMul);
         Button btnEqual = (Button) findViewById(R.id.Button12);
-        //Button btnС = (Button) findViewById(R.id.ButtonС);
+        Button btnС = (Button) findViewById(R.id.ButtonC);
 
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -154,13 +154,13 @@ public class MainActivity extends AppCompatActivity {
                 txt1.setText("=");
             }
         });
-        /*btnС.setOnClickListener(new View.OnClickListener() {
+        btnС.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final TextView txt1;
                 txt1 = (TextView) findViewById(R.id.txt1);
                 txt1.setText("С");
             }
-        });*/
+        });
     }
 }

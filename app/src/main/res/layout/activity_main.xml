@@ -164,5 +164,20 @@
                 android:textSize="30dp"/>
 
         </TableRow>
+        <TableRow
+            android:id="@+id/TableRow05"
+            android:layout_width="fill_parent"
+            android:layout_height="30pt"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ButtonC"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:text="@string/C"
+                android:textSize="30dp" />
+
+
+        </TableRow>
     </TableLayout>
 </LinearLayout>
