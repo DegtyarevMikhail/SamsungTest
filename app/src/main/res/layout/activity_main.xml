@@ -13,11 +13,17 @@
     <TextView
         android:id="@+id/txt1"
         android:layout_width="397dp"
-        android:layout_height="239dp"
+        android:layout_height="80dp"
         android:textColor="@color/white"
-        android:textSize="100dp"
-        />
+        android:textSize="70dp" />
 
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="397dp"
+        android:layout_height="80dp"
+        android:textColor="@color/white"
+        android:textSize="70dp" />
 
     <TableLayout
         android:id="@+id/TableLayout01"
@@ -31,6 +37,7 @@
             android:layout_height="wrap_content"
             android:gravity="center">
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/Button01"
                 android:layout_width="40pt"
                 android:layout_height="30pt"
@@ -38,6 +45,7 @@
                 android:textSize="30dp"/>
 
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/Button02"
                 android:layout_width="40pt"
                 android:layout_height="30pt"
@@ -45,6 +53,7 @@
                 android:textSize="30dp"/>
 
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/Button03"
                 android:layout_width="40pt"
                 android:layout_height="30pt"
@@ -52,6 +61,7 @@
                 android:textSize="30dp"/>
 
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/ButtonPlus"
                 android:layout_width="40pt"
                 android:layout_height="30pt"
@@ -66,6 +76,7 @@
             android:gravity="center">
 
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/Button04"
                 android:layout_width="40pt"
                 android:layout_height="30pt"
@@ -73,6 +84,7 @@
                 android:textSize="30dp"/>
 
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/Button05"
                 android:layout_width="40pt"
                 android:layout_height="30pt"
@@ -80,6 +92,7 @@
                 android:textSize="30dp"/>
 
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/Button06"
                 android:layout_width="40pt"
                 android:layout_height="30pt"
@@ -87,6 +100,7 @@
                 android:textSize="30dp"/>
 
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/ButtonMinus"
                 android:layout_width="40pt"
                 android:layout_height="30pt"
@@ -101,6 +115,7 @@
             android:gravity="center">
 
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/Button07"
                 android:layout_width="40pt"
                 android:layout_height="30pt"
@@ -108,6 +123,7 @@
                 android:textSize="30dp"/>
 
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/Button08"
                 android:layout_width="40pt"
                 android:layout_height="30pt"
@@ -115,6 +131,7 @@
                 android:textSize="30dp"/>
 
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/Button09"
                 android:layout_width="40pt"
                 android:layout_height="30pt"
@@ -122,6 +139,7 @@
                 android:textSize="30dp"/>
 
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/ButtonDivide"
                 android:layout_width="40pt"
                 android:layout_height="30pt"
@@ -136,6 +154,7 @@
             android:gravity="center">
 
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/Button10"
                 android:layout_width="40pt"
                 android:layout_height="30pt"
@@ -143,6 +162,7 @@
                 android:textSize="30dp"/>
 
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/Button11"
                 android:layout_width="40pt"
                 android:layout_height="30pt"
@@ -150,6 +170,7 @@
                 android:textSize="30dp"/>
 
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/Button12"
                 android:layout_width="40pt"
                 android:layout_height="30pt"
@@ -157,6 +178,7 @@
                 android:textSize="30dp"/>
 
             <Button
+                android:layout_margin="1dp"
                 android:id="@+id/ButtonMul"
                 android:layout_width="40pt"
                 android:layout_height="30pt"

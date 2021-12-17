@@ -1,5 +1,6 @@
 package com.example.samsungtest;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -10,6 +11,9 @@ import android.widget.TextView;
 import java.text.BreakIterator;
 
 public class MainActivity extends AppCompatActivity {
+
+    private TextView tex1;  // пользовательский элемент 1-го display
+    private TextView tex2;  // пользовательский элемент 2-го display
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnMultiply = (Button) findViewById(R.id.ButtonMul);
         Button btnEqual = (Button) findViewById(R.id.Button12);
         Button btnС = (Button) findViewById(R.id.ButtonC);
+
 
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 final TextView txt1;
-                txt1 = (TextView) findViewById(R.id.txt1);
+                txt1 = (TextView) findViewById(R.id.txt2);
                 txt1.setText("+");
             }
         });
@@ -126,41 +131,42 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 final TextView txt1;
-                txt1 = (TextView) findViewById(R.id.txt1);
+                txt1 = (TextView) findViewById(R.id.txt2);
                 txt1.setText("-");
             }
         });
         btnDivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final TextView txt1;
-                txt1 = (TextView) findViewById(R.id.txt1);
-                txt1.setText("/");
+                final TextView txt2;
+                txt2 = (TextView) findViewById(R.id.txt2);
+                txt2.setText("/");
             }
         });
         btnMultiply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final TextView txt1;
-                txt1 = (TextView) findViewById(R.id.txt1);
-                txt1.setText("*");
+                final TextView txt2;
+                txt2 = (TextView) findViewById(R.id.txt2);
+                txt2.setText("*");
             }
         });
         btnEqual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final TextView txt1;
-                txt1 = (TextView) findViewById(R.id.txt1);
-                txt1.setText("=");
+                final TextView txt2;
+                txt2 = (TextView) findViewById(R.id.txt2);
+                txt2.setText("=");
             }
         });
         btnС.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final TextView txt1;
-                txt1 = (TextView) findViewById(R.id.txt1);
-                txt1.setText("С");
+                final TextView txt2;
+                txt2 = (TextView) findViewById(R.id.txt2);
+                txt2.setText("С");
             }
         });
     }
+
 }
