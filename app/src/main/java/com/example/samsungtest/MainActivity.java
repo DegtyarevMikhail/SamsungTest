@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -12,7 +13,7 @@ import java.text.BreakIterator;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int txt1;
+    private TextView txt1;
     private TextView txt2;
     private final static String KeyStoreges = "Storeges";
 
@@ -39,18 +40,18 @@ public class MainActivity extends AppCompatActivity {
         Button btnEqual = (Button) findViewById(R.id.Button12);
         Button btnС = (Button) findViewById(R.id.ButtonC);
 
-  /*      if (savedInstanceState != null  && savedInstanceState.containsKey(KeyStoreges))
+       if (savedInstanceState != null  && savedInstanceState.containsKey(KeyStoreges))
         {
-            txt1 = savedInstanceState.getInt(KeyStoreges);
+           // txt1 = savedInstanceState.getString(KeyStoreges);
+            txt1 = savedInstanceState.getParcelable(KeyStoreges);
         }
-*/
 
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final TextView txt1;
+                /* final TextView txt1; */
                 txt1 = (TextView) findViewById(R.id.txt1);
-                txt1.setText("0");
+                txt1.setText("0");//(String.valueOf(txt1.getTxt1()));
             }
         });
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -175,10 +176,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-   /* @Override
-    protected void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putString(KeyStoreges, String.valueOf(txt1));
-        outState.putString(KeyStoreges, String.valueOf(txt2));
-    }*/
+       @Override
+     protected void onSaveInstanceState(@NonNull Bundle outState){
+         super.onSaveInstanceState(outState);
+         //outState.putString(KeyStoreges, String.valueOf(txt1));
+        // outState.putString(KeyStoreges, String.valueOf(txt2));
+           outState.putParcelable(KeyStoreges, (Parcelable) txt1);
+           outState.putParcelable(KeyStoreges, (Parcelable) txt2);
+     }
+
+
 }
