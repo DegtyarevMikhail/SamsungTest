@@ -12,8 +12,9 @@ import java.text.BreakIterator;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tex1;  // пользовательский элемент 1-го display
-    private TextView tex2;  // пользовательский элемент 2-го display
+    private int txt1;
+    private TextView txt2;
+    private final static String KeyStoreges = "Storeges";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
         Button btnEqual = (Button) findViewById(R.id.Button12);
         Button btnС = (Button) findViewById(R.id.ButtonC);
 
+  /*      if (savedInstanceState != null  && savedInstanceState.containsKey(KeyStoreges))
+        {
+            txt1 = savedInstanceState.getInt(KeyStoreges);
+        }
+*/
 
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -169,4 +175,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+   /* @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString(KeyStoreges, String.valueOf(txt1));
+        outState.putString(KeyStoreges, String.valueOf(txt2));
+    }*/
 }
