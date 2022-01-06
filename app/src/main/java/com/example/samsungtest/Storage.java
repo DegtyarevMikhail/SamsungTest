@@ -3,18 +3,19 @@ package com.example.samsungtest;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class Storage implements Parcelable {
-    private String txt1 = "";
-    private String txt2 = "";
 
-    public Storage(String txt1) {
-        this.txt1 = txt1;
+public class Storage implements Parcelable {
+    private String display1 = "";
+    private String display2 = "";
+
+    public Storage() {
+        this.display1 = display1;
+        this.display2 = display2;
     }
 
-
     protected Storage(Parcel in) {
-        txt1 = in.readString();
-        txt2 = in.readString();
+        display1 = in.readString();
+        display2 = in.readString();
     }
 
     public static final Creator<Storage> CREATOR = new Creator<Storage>() {
@@ -29,20 +30,20 @@ public class Storage implements Parcelable {
         }
     };
 
-    public String getTxt1() {
-        return txt1;
+    public String getDisplay1() {
+        return display1;
     }
 
-    public void setTxt1(String txt1) {
-        this.txt1 = txt1;
+    public void setDisplay1(String display1) {
+        this.display1 = display1;
     }
 
-    public String getTxt2() {
-        return txt2;
+    public String getDisplay2() {
+        return display2;
     }
 
-    public void setTxt2(String txt2) {
-        this.txt2 = txt2;
+    public void setDisplay2(String display2) {
+        this.display2 = display2;
     }
 
     @Override
@@ -52,8 +53,8 @@ public class Storage implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(txt1);
-        parcel.writeString(txt2);
+        parcel.writeString(display1);
+        parcel.writeString(display2);
     }
 }
 

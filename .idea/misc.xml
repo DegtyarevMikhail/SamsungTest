@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Mikhail/StudioProjects/SamsungTest/app/src/main/res/layout-land/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Mikhail/StudioProjects/SamsungTest/app/src/main/res/layout-land/land.xml" value="0.31040564373897706" />
         <entry key="..\:/Users/Mikhail/StudioProjects/SamsungTest/app/src/main/res/layout/activity_main.xml" value="0.1661600810536981" />
+        <entry key="..\:/Users/Mikhail/StudioProjects/SamsungTest/app/src/main/res/layout/activity_main_land.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Mikhail/StudioProjects/SamsungTest/app/src/main/res/layout/activity_settings.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Mikhail/StudioProjects/SamsungTest/app/src/main/res/layout/land.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/login/AndroidStudioProjects/SamsungTest/app/src/main/res/layout/activity_main.xml" value="0.22" />
       </map>
     </option>
@@ -13,5 +18,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>
